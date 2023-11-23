@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.header {
+    min-height: 5em;
+    background-color: rgb(69, 71, 95);
+    font-size: 20px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    transition: all 1.8s;
+}
+
+.header .logo img:hover {
+    transform: rotateY(360deg);
+}
+
+.header .barra ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.header .barra ul li a {
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.header .barra ul li a:hover {
+    color: rgba(51, 199, 204, 0.8);
+}
+
+.home {
+    height: calc(100vh - 5em);
+    width: 100%;
+    background-color: rgba(18, 18, 19, 0.8156862745);
+    display: flex;
+    background-image: url(imagenes/diente_particula.jpg);
+}
+
+.home .call {
+    width: 50%;
+    height: 50%;
+    margin: 25px;
+}
+
+.home .call h1 {
+    text-align: left;
+    padding: 15px;
+}
+
+.home .call p {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.home .call a {
+    color: #3d5deb;
+    font-weight: bold;
+    border: solid 2px rgb(54, 123, 212);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.home .call a:hover {
+    background-color: #0c77be;
+    color: #000;
+    border-color: #0c77be;
+    box-shadow: 6px 5px 15px;
+}
+
+.footer {
+    min-height: 4em;
+    background-color: rgb(69, 71, 95);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer div {
+    padding: 3px;
+}
+
+.footer .seguinos p {
+    color: rgb(0, 0, 0);
+}
+
+.footer .derechos {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.footer .redes a:visited {
+    color: rgba(23, 173, 173, 0.562);
+}
+
+.footer .redes a:link {
+    color: rgba(23, 173, 173, 0.781);
+}
+
+
+
+
+.contacto {
+    height: calc(100vh - 5em);
+    width: 100%;
+}
+
+.contacto .contacto__galeria {
+    height: 100%;
+    background-color: #e9e8ed;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.contacto .contacto__galeria .contacto__galeria--imagen {
+    background-image: url(./imagenes/simbolo\ de\ medicina\ flores\ azules\ sin\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    grid-column: 4/6;
+    grid-row: 1/4;
+    transition: all 0.8s;
+}
+
+.contacto .contacto__galeria .contacto__galeria--imagen:hover {
+    transform: scale(1.1);
+}
+
+.contacto .contacto__galeria .contacto__galeria--titulo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 40px;
+    padding: 10px 10px 5px 10px;
+}
+
+.contacto .contacto__galeria .contacto__galeria--formulario {
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto .contacto__galeria .contacto__galeria--formulario form {
+    background: rgba(0, 0, 0, 0);
+    padding: 10px 20px;
+    width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto .contacto__galeria .contacto__galeria--formulario form input,
+.contacto .contacto__galeria .contacto__galeria--formulario form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.contacto .contacto__galeria .contacto__galeria--formulario form textarea:hover {
+    background-color: rgba(8, 142, 163, 0.2117647059);
+}
+
+.contacto .contacto__galeria .contacto__galeria--formulario form input:hover {
+    background-color: rgba(8, 142, 163, 0.2117647059);
+}
+
+.texto{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin-left: 25px;
+    grid-column: 1/4;
+    grid-row: 4/-1;
+
+}
+.abajo_mis_turnos, .abajo_solicitar_turno{
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 9px;
+    margin-left: 25px;
+    margin-top: 5px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
